@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Terraform Space</title>
+  <style>
+    body {
+      background-color: purple;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1, p {
+      color: white;
+    }
+
+    button {
+      background-color: red;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function activate() {
+      document.getElementById("message").innerHTML = "You have been linked to NASA knowledge base and images.";
+      document.getElementById("linkButton").style.display = "block";
+    }
+
+    function linkToSpace() {
+      document.getElementById("spaceMessage").innerHTML = "NASA knowledge base and images have been linked to space.";
+    }
+  </script>
+</head>
+<body>
+  <h1>NASA Exploration, Activate Now!</h1>
+  <p>Join the cosmic journey.</p>
+  <button onclick="activate()">Activate Now</button>
+  <p id="message"></p>
+  <button id="linkButton" style="display: none;" onclick="linkToSpace()">Link to Space</button>
+  <p id="spaceMessage"></p>
+</body>
+</html>
+
